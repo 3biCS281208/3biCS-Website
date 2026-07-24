@@ -575,7 +575,7 @@ target="_blank">
 
 function toggle(id){
 
-const blocks=document.querySelecifrAll(".content");
+const blocks=document.querySelectorAll(".content");
 const arrows=document.querySelectorAll(".arrow");
 
 blocks.forEach(function(item){
