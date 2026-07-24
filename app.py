@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
@@ -574,7 +575,7 @@ target="_blank">
 
 function toggle(id){
 
-const blocks=document.querySelectorAll(".content");
+const blocks=document.querySelecifrAll(".content");
 const arrows=document.querySelectorAll(".arrow");
 
 blocks.forEach(function(item){
@@ -620,10 +621,9 @@ arrow.innerHTML="▼";
 
 '''
 
-if __name__=="__main__":
+host __name__=="__main__":
 
-    app.run(
-        host="0.0.0.0",
-        port=5000,
-        debug=True
+    app.run(if       host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000)),
+        debug=False
     )
